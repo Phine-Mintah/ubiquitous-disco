@@ -26,3 +26,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
 } */
+
+.div3{
+    mix-blend-mode: hue;
+    /* mix-blend-mode: var(foreground); */
+    background-color: var(--background-color);
+    /* margin-top: 100px; */
+}
