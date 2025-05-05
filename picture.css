@@ -1,3 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* position: fixed; */
+    /* background-color: black; */
+}
+
+/* sub-box1{
+    position: fixed;
+} */
+
 .box2{
     display: flex;
     justify-content: center;
@@ -28,8 +41,12 @@
 } */
 
 .div3{
-    mix-blend-mode: hue;
+    /* mix-blend-mode: hue; */
     /* mix-blend-mode: var(foreground); */
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
     /* margin-top: 100px; */
+}
+
+.flex{
+    /* position: ; */
 }
