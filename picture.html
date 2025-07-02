@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>picture</title>
-	<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <link rel="stylesheet" href="picture.css" />
 </head>
 <body>
     <!-- <div class="flex-container"> -->
+
+    <!-- header -->
     <header class="box-1">
         <div class="flex bg-orange-400 sub-box1 justify-between items-center justify-center ">
-            
             <div class=""> 
                 <img class="w-[5rem] h-[5rem] object-cover rounded-[100%] ml-9" src="medals.jpg" alt="picture of medals" />
             </div>
@@ -28,14 +30,30 @@
                 <div class="text mr-6">
                     <a href="index.html">About what we do</a>
                 </div>
-            </div>
+        </div>
         </div>
 
-        <div class="flex flex-col bg-gray-300 items-center justify-center hover:bg-gray-300/100 bg-opacity-50">
-
-            <p class="text-2xl font-bold" onclick="button()" id="pixel">sub header</p>
+        <div class="bg-gray-300 w-[100%] text-center">
+            <p class="dropdown-button dropdown show bg-gray-200 hover:bg-gray-300 text-2xl font-bold" onclick="toggleDropdown()" id="pixel">sub header</p>
+            <ul id="myDropdown" class="dropdown-list">
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+                <li><a href="#">Option 4</a></li>
+              </ul>
         </div>
 
+        <!-- <div class="dropdown">
+            <button class="dropdown-button" onclick="toggleDropdown()">Select an Option</button>
+            <ul id="myDropdown" class="dropdown-list">
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+              <li><a href="#">Option 4</a></li>
+            </ul>
+          </div> -->
+
+          
         <div class="flex flex-col items-center justify-center sub-box3 hover:bg-inherit">
             <div class="bg-white/20 p-3 pb-5 div3 rounded-lg shadow-lg">
                 <div class="text flex">
@@ -63,35 +81,58 @@
         </div>
     </header>
 
+    <!-- Main content -->
     <main class="flex flex-col">
-        <!-- <div class="text-5xl font-extrabold items-center justify-center ...">
-            <span class="bg-clip-text text-transparent  bg-gradient-to-r from-red-500 via-yellow-300 to-green-400">
-                Hello world
-            </span>
-        </div> -->
-
         <div class="flex flex-col items-center justify-center">
             <p class="text-2xl font-bold">main</p>
         </div>
 
-        <div class="bg-white ">
-            <img class="w-[30%] " src="fig-kirby.jpg" alt="picture of medals" />
+    <div class="grid grid-cols-4">
+        <div class="bg-white shadow-md hover:shadow-lg ml-[1rem] p-[1.4rem] w-[289px] h-[389px] text-center pl-[0.5rem] pr-[0.5rem] pt-[0.5rem] sm:mb-5 rounded-2xl border hover:scale-105 ease-in-out duration-300">
+            <img class="object-cover" src="fig-kirby.jpg" alt="picture of medals" />
+            <h1 class="text-2xl font-bold">fig kirby</h1>
+            <p class="">hfiuwejcwj yuifiuweurfoigoirougovnjeoficn lhviweofbjfgn3oiwefionlkgjlb3ogoioi e,mjogerogprrjpeogr</p>
         </div>
+
+        <a class="bg-white border shadow-md hover:shadow-lg ml-[1rem] p-[1.4rem] w-[289px] h-[389px] text-center pl-[0.5rem] pr-[0.5rem] pt-[0.5rem] sm:mb-5 rounded-2xl hover:scale-105 ease-in-out duration-300" href="23er">
+            <img class="object-cover" src="fig-kirby.jpg" alt="picture of medals" />
+            <h1 class="text-2xl font-bold">fig kirby</h1>
+            <p class="">hfiuwejcwj yuifiuweurfoigoirougovnjeoficn lhviweofbjfgn3oiwefionlkgjlb3ogoioi e,mjogerogprrjpeogr</p>
+        </a>
+        
+        <div class="bg-white shadow-md hover:shadow-lg ml-[1rem] p-[1.4rem] w-[289px] h-[389px] text-center pl-[0.5rem] pr-[0.5rem] pt-[0.5rem] sm:mb-5 rounded-2xl border hover:scale-105 ease-in-out duration-300">
+            <img class="object-cover" src="fig-kirby.jpg" alt="picture of medals" />
+            <h1 class="text-2xl font-bold">fig kirby</h1>
+            <p class="">hfiuwejcwj yuifiuweurfoigoirougovnjeoficn lhviweofbjfgn3oiwefionlkgjlb3ogoioi e,mjogerogprrjpeogr</p>
+        </div>
+
+        <div class="bg-white shadow-md hover:shadow-lg ml-[1rem] p-[1.4rem] w-[289px] h-[389px] text-center pl-[0.5rem] pr-[0.5rem] pt-[0.5rem] sm:mb-5 rounded-2xl border hover:scale-105 ease-in-out duration-300">
+            <img class="object-cover" src="fig-kirby.jpg" alt="picture of medals" />
+            <h1 class="text-2xl font-bold">fig kirby</h1>
+            <p class="">hfiuwejcwj yuifiuweurfoigoirougovnjeoficn lhviweofbjfgn3oiwefionlkgjlb3ogoioi e,mjogerogprrjpeogr</p>
+        </div>
+    </div>
+
+    
+        <!-- does not work -->
         <!-- <img src="c:\Users\Me\OneDrive\Desktop\tailwind-lesson\images.jpg" /> -->
     </main>
+    <!-- dropdown -->
 
-    <footer class="bg-  bg-orange-400">
+    <!-- footer -->
+    <footer class="bg-black text-white">
+
         <nav>
             <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 pb-[3rem] pt-[0.2rem] text-center">
-                <div class="hover:bg-gray-300/100 bg-opacity-50">
-                    <li><a href="#">w</a></li>
-                    <li><a href="#">y</a></li>
-                    <li><a href="#">u</a></li>
-                    <li><a href="#">8</a></li>
+                <div class="hover:text-gray-300/100 bg-opacity-50">
+                    <li class="hover:text-amber-300"><a href="#">w</a></li>
+                    <li class="hover:text-yellow-300"><a href="#">y</a></li>
+                    <li class="hover:text-amber-300"><a href="#">u</a></li>
+                    <li class="hover:text-amber-300"><a href="#">8</a></li>
                 </div>
 
                 <div class="">
-                    <li><a href="#">d</a></li>
+                    <li><a href="#">d</a></li>claariti
                     <li><a href="#">fin</a></li>
                     <li><a href="#">e</a></li>
                     <li><a href="#">s</a></li>
@@ -106,27 +147,56 @@
             </ul>
         </nav>
 
-        <!-- <div class="flex justify-center items-center">
-            <p class="text-2xl font-bold">footer</p>
-            <code>
-                &frac78; &copy; 2025&trade; &reg;
-            </code>
-        </div> -->
-
-
+        <p class="text-center">&copy; 2025 copy&copy; rights</p>
     </footer>
 
     <script src="picture.js"></script>
 </body>
 </html>
+
+<!-- flex flex-col items-center justify-center -->
+
+
 <!-- place-self-center -->
+
 
 <!-- <button class="bg-orange-400 hover:bg-orange-500 text-white font-bold py-2 px-2 rounded">
         start now
 </button> -->
 
+
+
 <!-- <center>swap</center> -->
 <!-- items-center justify-center -->
+
+
+
+<!-- <div class="text-5xl font-extrabold items-center justify-center ...">
+            <span class="bg-clip-text text-transparent  bg-gradient-to-r from-red-500 via-yellow-300 to-green-400">
+                Hello world
+            </span>
+     </div> -->
+
+
+
+<!-- <div class="flex justify-center items-center">
+        <p class="text-2xl font-bold">footer</p>
+        <code>
+            &frac78; &copy; 2025&trade; &reg;
+        </code>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
